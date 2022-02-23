@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Example API
+  version: 0.1.0
+  description: Example of hiding endpoints in SwaggerUI
+  contact:
+    name: API Support
+    email: api@ntropy.com
+    url: 'https://github.com/ntropy-network/openapi-hiding-example'
+tags:
+  - name: Initial version
+    description: Initial version of endpoints
+paths:
+  /some/nice/endpoint:
+    get:
+      operationId: api.some_nice_endpoint
+      tags:
+        - Initial version
+      summary: An endpoint that does nothing.
+      description: Well, there's not much to say about this endpoint other than that it is nice.
+      responses:
+        '201':
+          description: I am nice and 201
+  /yet/another/endpoint:
+    get:
+      operationId: api.yet_another_endpoint
+      tags:
+        - Initial version
+      summary: Another endpoint that does a lot of nothings.
+      description: Cricket sounds...
+      responses:
+        '201':
+          description: Hmmm...

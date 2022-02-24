@@ -16,6 +16,7 @@ paths:
   /some/nice/endpoint:
     get:
       operationId: api.some_nice_endpoint
+      deprecated: true
       tags:
         - Initial version
       summary: An endpoint that does nothing.
@@ -26,6 +27,7 @@ paths:
   /yet/another/endpoint:
     get:
       operationId: api.yet_another_endpoint
+      deprecated: true
       tags:
         - Initial version
       summary: Another endpoint that does a lot of nothings.

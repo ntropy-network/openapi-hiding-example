@@ -12,6 +12,10 @@ def yet_another_endpoint():
     return "I am different, but who cares?", 201
 
 
+def new_shiny_endpoint():
+    return "I new and shiny", 201
+
+
 if __name__ == '__main__':
     app.add_api('openapi.yaml')
     app.run(port=8080)

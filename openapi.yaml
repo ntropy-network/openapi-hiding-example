@@ -10,6 +10,8 @@ info:
 tags:
   - name: Initial version
     description: Initial version of endpoints
+  - name: Latest version
+    description: Latest version of endpoints
 paths:
   /some/nice/endpoint:
     get:
@@ -31,3 +33,13 @@ paths:
       responses:
         '201':
           description: Hmmm...
+  /new/shiny/endpoint:
+    get:
+      operationId: api.new_shiny_endpoint
+      tags:
+        - Latest version
+      summary: Shiny new endpoint
+      description: You ask what this new endpoint does? Shiny absolute nothing.
+      responses:
+        '201':
+          description: No-thing

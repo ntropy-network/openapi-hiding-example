@@ -8,14 +8,13 @@ info:
     email: api@ntropy.com
     url: 'https://github.com/ntropy-network/openapi-hiding-example'
 tags:
-  - name: Initial version
-    description: Initial version of endpoints
   - name: Latest version
     description: Latest version of endpoints
 paths:
   /some/nice/endpoint:
     get:
       operationId: api.some_nice_endpoint
+      x-hidden: true
       tags:
         - Initial version
       summary: An endpoint that does nothing.
@@ -26,6 +25,7 @@ paths:
   /yet/another/endpoint:
     get:
       operationId: api.yet_another_endpoint
+      x-hidden: true
       tags:
         - Initial version
       summary: Another endpoint that does a lot of nothings.
